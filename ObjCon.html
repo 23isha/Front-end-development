@@ -1,0 +1,23 @@
+<html>
+<head><title>creating object using constructor</title>
+</head>
+<body>
+<script type="text/javascript">
+function Box(l,b,h){
+this.l=l;
+this.b=b;
+this.h=h;}
+let b1=new Box(10,20,30);
+b1.display=function(){
+   console.log(`Length:${b1.l}`);
+   console.log(`Breadth:${b1.b}`);
+   console.log(`height:${b1.h}`);
+   }
+b1.display();
+b1.volume=function(){
+    return b1.l*b1.b*b1.h;}
+console.log(`Volume of box:${b1.volume()}`);
+</script>
+</body>
+</html>
+
