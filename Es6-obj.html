@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Creating an object using es6 clases</title>
+</head>
+<body>
+<script type="text/javascript">
+class Box{
+     constructor(l,b,h){
+         this.l=l;
+         this.b=b;
+         this.h=h;}
+      display(){
+           console.log(`Length:${this.l}`);
+           console.log(`Breadth:${this.b}`);
+           console.log(`height:${this.h}`);
+   }
+    volume(){
+        return this.l*this.b*this.h;
+} 
+}
+let obj=new Box(10,20,30);
+obj.display();
+console.log(`Volume of box:${obj.volume()}`);
+</script>
+</body>
+</html>  
